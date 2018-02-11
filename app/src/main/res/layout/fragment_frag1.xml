@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.prateek.fragment.Frag1"
+    tools:context="com.example.prateek.Miniproject.Frag1"
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:orientation="vertical"
         >
         <ImageView
@@ -32,14 +32,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
-        <TextView
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Paying Guest"
             android:layout_weight="100"
             android:textColor="#00E676"
             android:layout_gravity="center"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             style="@style/textViewback_style"/>
 
@@ -48,24 +49,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_weight="37">
-
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
         <EditText
-            android:id="@+id/editTextUserName"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
             style="@style/editText_style"
             android:layout_weight="1"
             android:cursorVisible="true"
-
             android:drawableLeft="@drawable/user_ic"
             android:hint="Username"
             android:inputType="text"
             android:paddingLeft="10sp"
-
             android:paddingRight="25sp"
             android:singleLine="false" />
+
+    </LinearLayout>
         <EditText
             style="@style/editText_style"
+            android:id="@+id/text_input_password"
             android:drawableLeft="@drawable/password_ic"
             android:drawableRight="@drawable/show_password_ic"
             android:layout_weight="1"
@@ -73,7 +81,7 @@
             android:paddingRight="10dp"
             android:inputType="textPassword"
             android:hint="Password"/>
-    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,8 +108,9 @@
         android:layout_weight="30">
         <CheckBox
             android:layout_width="wrap_content"
+            android:id="@+id/remember"
             android:layout_height="wrap_content"
-            android:text=" Remember Me As Login"
+            android:text=" Remember Me "
             android:layout_marginTop="10dp"
             android:layout_weight="30"
             android:layout_marginLeft="18dp"
@@ -111,7 +120,7 @@
             android:layout_marginTop="15dp"
             style="@style/textViewback_style"
             android:layout_weight="40"
-            android:id="@+id/forgetText"
+            android:id="@+id/forget"
             android:textColor="#00E676"
             android:text="Forget Password?"
             android:layout_marginBottom="10dp"/>

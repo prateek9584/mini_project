@@ -1,4 +1,4 @@
-package com.example.prateek.fragment;
+package com.example.prateek.Miniproject;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

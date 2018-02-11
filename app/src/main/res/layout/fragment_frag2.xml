@@ -6,105 +6,127 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.example.prateek.fragment.Frag2">
+    tools:context="com.example.prateek.Miniproject.Frag2">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100dp">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        />
-</LinearLayout>
-    <EditText
-        android:id="@+id/editText"
-      style="@style/editText_style"
-        android:drawableLeft="@drawable/user_ic"
-        android:layout_width="match_parent"
-        android:paddingLeft="10dp"
-        android:paddingRight="40dp"
-        android:layout_height="match_parent"
-        android:ems="10"
-        android:layout_weight="1"
-        android:inputType="textPersonName"
-        android:hint="Username" />
 
-    <EditText
-        style="@style/editText_style"
-        android:id="@+id/editText2"
-        android:drawableLeft="@drawable/email_ic"
-        android:paddingLeft="10dp"
-        android:paddingRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:hint="Enter your E-mail"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        style="@style/editText_style"
-        android:layout_weight="1"
-        android:drawableLeft="@drawable/phone_ic"
-        android:paddingLeft="10dp"
-        android:paddingRight="30dp"
-        android:hint="Enter your number"
-        android:ems="10"
-        android:inputType="phone" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/editText3"
-        android:layout_weight="1"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:drawableLeft="@drawable/password_ic"
-        android:hint="Enter your Password"
-        style="@style/editText_style"
-        android:ems="10"
-        android:inputType="textPassword" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="37"
+                android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/editText4"
-        android:drawableRight="@drawable/show_password_ic"
-        android:paddingLeft="60dp"
-        android:paddingRight="10dp"
-        android:layout_weight="1"
-        android:hint="Confirm your Password"
-        style="@style/editText_style"
-        android:ems="10"
-        android:inputType="textPassword" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:layout_gravity="center">
-    <Button
-        android:id="@+id/button"
-        style="@style/buton_background"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginStart="10dp"
-        android:layout_weight="1"
-        android:text="Register" />
-</LinearLayout>
-</LinearLayout>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/user"
+                    style="@style/editText_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/user_ic"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="40dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/editText_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/email_ic"
+                android:ems="10"
+                android:hint="Enter your E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp" />
+
+            <EditText
+                android:id="@+id/number"
+                style="@style/editText_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/phone_ic"
+                android:ems="10"
+                android:hint="Enter your number"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/editText_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/password_ic"
+                android:ems="10"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp" />
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                style="@style/editText_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/show_password_ic"
+                android:ems="10"
+                android:hint="Confirm your Password"
+                android:inputType="textPassword"
+                android:paddingLeft="60dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/buton_background"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="Register" />
+            </LinearLayout>
+        </LinearLayout>
+
     </ScrollView>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.prateek.fragment;
+package com.example.prateek.Miniproject;
 
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;

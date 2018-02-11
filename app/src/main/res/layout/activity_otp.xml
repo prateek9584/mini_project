@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prateek.Miniproject.Otp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp">
+    <EditText
+        android:id="@+id/username"
+        style="@style/editText_style"
+        android:drawableLeft="@drawable/user_ic"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/editText_style"
+        android:layout_weight="1"
+        android:id="@+id/number"
+        android:drawableLeft="@drawable/phone_ic"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:hint="Enter your number"
+        android:ems="10"
+        android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+      <Button
+        android:id="@+id/send"
+        style="@style/buttonbackground_style"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/send_ic"
+        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:text="SEND" />
+    <Button
+        android:id="@+id/resend"
+        style="@style/buttonbackground_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:text="RESEND" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+        android:id="@+id/otp"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number" />
+        <Button
+            android:id="@+id/verify"
+            style="@style/buttonbackground_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="VERIFY" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+
+
+
