@@ -15,7 +15,9 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Frag1 extends Fragment {
@@ -25,6 +27,7 @@ public class Frag1 extends Fragment {
     String[] select;
     int sp_position;
     String selected;
+    FirebaseAuth mAuth;
     public Frag1() {
         // Required empty public constructor
     }
@@ -38,7 +41,6 @@ public class Frag1 extends Fragment {
         txt = (TextView)v.findViewById(R.id.forget);
         sp = (Spinner)v.findViewById(R.id.sp);
         un= (EditText)v.findViewById(R.id.username);
-
        // String myString = "Country";
         select = getResources().getStringArray(R.array.name);
         ArrayAdapter<String> ad = new ArrayAdapter<String>(getContext(),android. R.layout.simple_spinner_dropdown_item,select);
@@ -57,6 +59,7 @@ public class Frag1 extends Fragment {
                     {
                     String str = (String) sp.getItemAtPosition(i);
                     un.setHint(str+"name");
+                        Toast.makeText(getContext(),str+"name", Toast.LENGTH_LONG);
                 }
 
             }
